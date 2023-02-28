@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\LandingPageController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,4 +17,16 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('pages.landing-page.index');
+});
+
+Route::controller(AuthController::class)->group(function () {
+    Route::middleware('guest')->group(function () {
+        Route::get('login', 'index');
+        Route::post('login', 'login');
+    });
+    Route::post('logout', 'logout');
+});
+
+Route::controller(LandingPageController::class)->middleware('auth')->group(function () {
+    Route::get('/dashboard', 'index')->name('dashboard.index');
 });

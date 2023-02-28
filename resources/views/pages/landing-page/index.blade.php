@@ -1,4 +1,4 @@
-@extends('layout.landing-page.main')
+@extends('layouts.landing-page.main')
 
 @section('content')
 <main id="main">
