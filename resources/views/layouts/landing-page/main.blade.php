@@ -40,8 +40,6 @@
 <body>
 
     @include('layouts.landing-page.component.header')
-    @include('layouts.landing-page.component.hero')
-
 
     @yield('content')
   
