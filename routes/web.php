@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [IndexController::class, 'index']);
+Route::post('send-email', [IndexController::class, 'contactEmail'])->name('send-email');
 
 Route::controller(AuthController::class)->group(function () {
     Route::middleware('guest')->group(function () {
