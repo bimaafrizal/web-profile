@@ -118,7 +118,9 @@
                     
                 <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
                     <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-                        <div class="icon"> {{ $service->icon }}  <i class="bx bxl-dribbble"></i> </div>
+                        <div class="icon"> 
+                            {!! $service->icon !!}
+                        </div>
                         <h4 class="title"><a href=""> {{ $service->title }} </a></h4>
                         <p class="description">{{ $service->description }}</p>
                     </div>

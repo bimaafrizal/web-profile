@@ -401,7 +401,7 @@ Setting Landing Page
                     </div>
                     <div class="row mb-3">
                         <label for="icon" class="form-label">Icon*</label>
-                        <small>(using bootstrap icons)</small>
+                        <small> <a href="https://boxicons.com/?query=d">(using box icons)</a></small>
                         <input type="text" id="icon" name="icon" class="form-control" required value=" {{ old('icon') }}">
                     </div>
                     <div class="row mb-3">
@@ -434,7 +434,7 @@ Setting Landing Page
                     </div>
                     <div class="row mb-3">
                         <label for="icon" class="form-label">Icon*</label>
-                        <small>(using bootstrap icons)</small>
+                        <small> <a href="https://boxicons.com/?query=d">(using box icons)</a></small>
                         <input type="text" id="icon" name="icon" class="form-control" required value=" {{ old('icon', $service->icon) }}">
                     </div>
                     <div class="row mb-3">
